@@ -11,23 +11,19 @@ body {
     color: white;
 }
 
-.header {
-    font-size: 32px;
-}
-
 .header > .section_title {
-    font-size: 60px;
+    font-size: 42px;
 }
 
 .header > .header_menu {
-    margin-top: 200px;
+    margin-top: 40px;
     width: 100%;
     padding: 0;
+    margin: 0 auto;
 }
 
 .header > .header_menu li {
     list-style-type: none;
-    width: 19%;
     display: inline-block;
 }
 
@@ -36,5 +32,5 @@ body {
 }
 
 .section_title {
-    font-size: 32px;
+    font-size: 24px;
 }
