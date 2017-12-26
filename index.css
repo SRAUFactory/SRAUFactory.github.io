@@ -11,11 +11,26 @@ body {
     color: white;
 }
 
+.header {
+    font-size: 24px;
+}
+
 .header > .section_title {
     font-size: 50px;
 }
 
-.header li a {
+.header ul {
+    width: 100%;
+    padding: 0;
+}
+
+.header ul li {
+    list-style-type: none;
+    width: 19%;
+    display: inline-block;
+}
+
+.header ul li a {
     color: white;
 }
 
