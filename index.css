@@ -12,25 +12,26 @@ body {
 }
 
 .header {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .header > .section_title {
-    font-size: 50px;
+    font-size: 60px;
 }
 
-.header ul {
+.header > .header_menu {
+    margin-top: 200px;
     width: 100%;
     padding: 0;
 }
 
-.header ul li {
+.header > .header_menu li {
     list-style-type: none;
     width: 19%;
     display: inline-block;
 }
 
-.header ul li a {
+.header > .header_menu li a {
     color: white;
 }
 
