@@ -3,34 +3,24 @@ body {
     margin: 0;
 }
 
-.header {
+.column {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+.active_back {
     background-color: #2B66C9;
     opacity: 0.95;
     color: white;
-}
-
-.header > .section_title {
-    font-size: 42px;
-}
-
-.header > .header_menu {
-    margin-top: 40px;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.header > .header_menu li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.header > .header_menu li a {
-    color: white;
+    background-size: cover;
 }
 
 .section_title {
-    font-size: 24px;
+    font-size: 40px;
+}
+
+@media all and (min-width: 500px) {
+    .wrapper {
+        display: flex;
+    }
 }
