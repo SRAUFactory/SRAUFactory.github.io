@@ -8,6 +8,10 @@ body {
     height: 100vh;
 }
 
+.column > .row {
+    height: 40vh;
+}
+
 .active_back {
     background-color: #2B66C9;
     opacity: 0.95;
@@ -16,7 +20,6 @@ body {
 }
 
 .header_menu {
-    margin-top: 40px;
     width: 100%;
     padding: 0;
     margin: 0 auto;
