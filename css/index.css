@@ -8,6 +8,10 @@ body {
     height: 100vh;
 }
 
+.column > .row {
+    height: 40vh;
+}
+
 .active_back {
     background-color: #2B66C9;
     opacity: 0.95;
@@ -15,12 +19,42 @@ body {
     background-size: cover;
 }
 
+.header_menu {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header_menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 50vh;
+}
+
+.header_menu li a {
+    color: #2B66C9;
+    font-size: 24px;
+}
+
 .section_title {
-    font-size: 40px;
+    font-size: 44px;
+}
+
+.text_left {
+    text-align: left;
+    margin: 0 8px 0;
 }
 
 @media all and (min-width: 500px) {
     .wrapper {
         display: flex;
+    }
+
+    .section_sub_title {
+        font-size: 24px;
+    }
+
+    .text_left {
+        margin: 70px;
     }
 }
