@@ -40,6 +40,11 @@ body {
     font-size: 44px;
 }
 
+.text_left {
+    text-align: left;
+    margin: 0 8px 0;
+}
+
 @media all and (min-width: 500px) {
     .wrapper {
         display: flex;
@@ -47,5 +52,9 @@ body {
 
     .section_sub_title {
         font-size: 24px;
+    }
+
+    .text_left {
+        margin: 70px;
     }
 }
