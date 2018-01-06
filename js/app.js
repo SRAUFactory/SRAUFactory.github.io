@@ -10,12 +10,17 @@ var app = new Vue({
     },
     methods: {
         getKnowledges: function() {
-            var xhr = new XMLHttpRequest();
             var self = this;
-            xhr.open("GET", GET_KNOWLEDGES_URL);
+            var callback = function (json) {
+                self.knowledges = json;
+            }
+            this.getData(GET_KNOWLEDGES_URL, callback);
+        },
+        getData: function(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
             xhr.onload = function () {
-                self.knowledges = JSON.parse(xhr.responseText);
-                console.log(self.knowledges);
+                callback(JSON.parse(xhr.responseText));
             };
             xhr.send();
         }
