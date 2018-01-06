@@ -19,15 +19,15 @@ body {
     background-size: cover;
 }
 
-li {
-    list-style-type: none;
-    display: block;
-}
-
-.header_menu {
+ul {
     width: 100%;
     padding: 0;
     margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+    display: block;
 }
 
 .header_menu li {
@@ -35,9 +35,31 @@ li {
     width: 50vh;
 }
 
-.header_menu li a {
+.header_menu li a,
+.list_item li a {
     color: #2B66C9;
     font-size: 24px;
+}
+
+.list_item {
+    text-align: left;
+}
+
+.list_item li {
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px darkgray;
+}
+
+.grayout {
+    color: white;
+    background-color: darkgray;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.date {
+    text-align: right;
 }
 
 .section_title {
