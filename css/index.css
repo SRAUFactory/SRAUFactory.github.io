@@ -20,7 +20,7 @@ body {
 }
 
 ul {
-    width: 100%;
+    width: 100wh;
     padding: 0;
     margin: 0 auto;
 }
@@ -38,7 +38,7 @@ li {
 .header_menu li a,
 .list_item li a {
     color: #2B66C9;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .list_item {
@@ -54,8 +54,11 @@ li {
 .grayout {
     color: white;
     background-color: darkgray;
-    margin-right: 5px;
-    padding: 5px;
+}
+
+.list_item li .grayout {
+    margin-right: 10px;
+    padding: 3px;
 }
 
 .date {
