@@ -54,7 +54,7 @@
             <div id="knowledges" class="column"> 
                 <h1 class="section_title">Knowledges</h1>
                 <ul class="list_item">
-                    <li v-for="knowledge in knowledges" v-bind:key="knowledge.Id">
+                    <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
                         <a :href="knowledge.Url" target="_">{{knowledge.Title}}</a><br>
                         <span class="grayout" v-for="tag in knowledge.Tags">{{tag.Name}}</span><br>
                         <div class="date">{{knowledge.created_at}}</div>
