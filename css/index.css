@@ -61,10 +61,6 @@ li {
     padding: 3px;
 }
 
-.date {
-    text-align: right;
-}
-
 .section_title {
     font-size: 44px;
 }
@@ -72,6 +68,14 @@ li {
 .text_left {
     text-align: left;
     margin: 0 8px 0;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.link_more {
+    margin: 20px; 
 }
 
 @media all and (min-width: 500px) {

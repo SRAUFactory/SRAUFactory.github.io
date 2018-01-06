@@ -57,8 +57,11 @@
                     <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
                         <a :href="knowledge.Url" target="_">{{knowledge.Title}}</a><br>
                         <span class="grayout" v-for="tag in knowledge.Tags">{{tag.Name}}</span><br>
-                        <div class="date">{{knowledge.created_at}}</div>
+                        <div class="text_right">{{knowledge.created_at}}</div>
                     </li>
+                    <div class="link_more text_right">
+                        <a href="https://qiita.com/SRAUFactory" target="_">もっと見る</a>
+                    </div>
                 </ul>
             </div>
 
