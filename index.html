@@ -53,9 +53,13 @@
         <section id="knowledgesRepositores" class="wrapper">
             <div id="knowledges" class="column"> 
                 <h1 class="section_title">Knowledges</h1>
-                <p>
-                Coming soon...
-                </p>
+                <ul>
+                    <li v-for="knowledge in knowledges" v-bind:key="knowledge.Id">
+                        <a :href="knowledge.Url" target="_">{{knowledge.Title}}</a><br>
+                        <span v-for="tag in knowledge.Tags">{{tag.Name}}</span><br>
+                        <span>{{knowledge.created_at}}</span>
+                    </li>
+                </ul>
             </div>
 
             <div id="repositores" class="active_back column">
