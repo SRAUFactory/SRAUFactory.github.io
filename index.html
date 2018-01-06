@@ -50,12 +50,19 @@
             </div>
         </section>
 
-        <section class="wrapper">
+        <section id="knowledgesRepositores" class="wrapper">
             <div id="knowledges" class="column"> 
                 <h1 class="section_title">Knowledges</h1>
-                <p>
-                Coming soon...
-                </p>
+                <ul class="list_item">
+                    <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
+                        <a :href="knowledge.Url" target="_">{{knowledge.Title}}</a><br>
+                        <span class="grayout" v-for="tag in knowledge.Tags">{{tag.Name}}</span><br>
+                        <div class="text_right">{{knowledge.created_at}}</div>
+                    </li>
+                    <div class="link_more text_right">
+                        <a href="https://qiita.com/SRAUFactory" target="_">もっと見る</a>
+                    </div>
+                </ul>
             </div>
 
             <div id="repositores" class="active_back column">
@@ -65,6 +72,8 @@
                 </p>
             </div>
         </section>
+        <script src="https://unpkg.com/vue"></script>
         <script src="js/smoothscroll.min.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
