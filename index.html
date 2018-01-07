@@ -68,11 +68,14 @@
             <div id="repositores" class="active_back column">
                 <h1 class="section_title">Repositories</h1>
                 <ul class="list_item">
-                    <li v-for="(repository, index) in repositories" v-bind:key="repository.name">
+                    <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
                         <a :href="repository.html_url" target="_">{{repository.name}}</a><br>
                         <span class="grayout">{{repository.language}}</span><br>
                         <div class="text_right">{{repository.pushed_at}}</div>
                     </li>
+                     <div class="link_more text_right">
+                         <a href="https://github.com/SRAUFactory?tab=repositories" target="_">もっと見る</a>
+                     </div>
                 </ul>
             </div>
         </section>
