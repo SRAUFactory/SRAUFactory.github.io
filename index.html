@@ -37,13 +37,13 @@
                     <h1 class="section_title">Accounts</h1>
                     <ul class="header_menu">
                         <li>
-                            <a href="https://qiitadon.com/@sraufactory" target="_">Mastodon/Qiitadon</a>
+                            <a href="https://qiitadon.com/@sraufactory" target="_blank">Mastodon/Qiitadon</a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/SRAUFactory" target="_">Twitter</a>
+                            <a href="https://twitter.com/SRAUFactory" target="_blank">Twitter</a>
                         </li>
                         <li>
-                            <a href="https://crowdworks.jp/public/employees/741010" target="_">CrowdWorks</a>
+                            <a href="https://crowdworks.jp/public/employees/741010" target="_blank">CrowdWorks</a>
                         </li>
                     </ul>
                 </div>
@@ -55,12 +55,12 @@
                 <h1 class="section_title">Knowledges</h1>
                 <ul class="list_item">
                     <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
-                        <a :href="knowledge.Url" target="_">{{knowledge.Title}}</a><br>
+                        <a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a><br>
                         <span class="grayout" v-for="tag in knowledge.Tags">{{tag.Name}}</span><br>
                         <div class="text_right">{{knowledge.created_at}}</div>
                     </li>
                     <div class="link_more text_right">
-                        <a href="https://qiita.com/SRAUFactory" target="_">もっと見る</a>
+                        <a href="https://qiita.com/SRAUFactory" target="_blank">もっと見る</a>
                     </div>
                 </ul>
             </div>
@@ -69,12 +69,12 @@
                 <h1 class="section_title">Repositories</h1>
                 <ul class="list_item">
                     <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
-                        <a :href="repository.html_url" target="_">{{repository.name}}</a><br>
+                        <a :href="repository.html_url" target="_blank">{{repository.name}}</a><br>
                         <span class="grayout">{{repository.language}}</span><br>
                         <div class="text_right">{{repository.pushed_at}}</div>
                     </li>
                      <div class="link_more text_right">
-                         <a href="https://github.com/SRAUFactory?tab=repositories" target="_">もっと見る</a>
+                         <a href="https://github.com/SRAUFactory?tab=repositories" target="_blank">もっと見る</a>
                      </div>
                 </ul>
             </div>
