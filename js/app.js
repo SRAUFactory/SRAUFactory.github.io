@@ -23,7 +23,9 @@ var app = new Vue({
             var self = this;
             var callback = function (json) {
                 self.repositories = json;
-                console.log(self.repositories);
+                self.repositories.sort(function (value1, value2) {
+                    return value1.pushed_at < value2.pushed_at? 1 : -1; 
+                });
             };
             this.getData(GET_REPOSITORIES_URL, callback);
         },
