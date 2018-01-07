@@ -67,9 +67,13 @@
 
             <div id="repositores" class="active_back column">
                 <h1 class="section_title">Repositories</h1>
-                <p>
-                Coming soon...
-                </p>
+                <ul class="list_item">
+                    <li v-for="(repository, index) in repositories" v-bind:key="repository.name">
+                        <a :href="repository.html_url" target="_">{{repository.name}}</a><br>
+                        <span class="grayout">{{repository.language}}</span><br>
+                        <div class="text_right">{{repository.pushed_at}}</div>
+                    </li>
+                </ul>
             </div>
         </section>
         <script src="https://unpkg.com/vue"></script>
