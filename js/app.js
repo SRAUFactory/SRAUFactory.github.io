@@ -1,5 +1,6 @@
 const GET_KNOWLEDGES_URL   = "data/qiita.json";
 const GET_REPOSITORIES_URL = "https://api.github.com/users/SRAUFactory/repos?per_page=100";
+const DATE_FORMAT = 'YYYY/MM/DD hh:mm:ss';
 
 var app = new Vue({
     el: '#knowledgesRepositores',
@@ -14,14 +15,12 @@ var app = new Vue({
     filters: {
         formatDate: function (dateString) {
             let date = new Date(dateString);
-            var format = 'YYYY/MM/DD hh:mm:ss';
-            format = format.replace(/YYYY/g, date.getFullYear());
-            format = format.replace(/MM/g, ('0' + (date.getMonth() + 1)).slice(-2));
-            format = format.replace(/DD/g, ('0' + date.getDate()).slice(-2));
-            format = format.replace(/hh/g, ('0' + date.getHours()).slice(-2));
-            format = format.replace(/mm/g, ('0' + date.getMinutes()).slice(-2));
-            format = format.replace(/ss/g, ('0' + date.getSeconds()).slice(-2));
-            return format; 
+            return DATE_FORMAT.replace(/YYYY/g, date.getFullYear())
+                .replace(/MM/g, ('0' + (date.getMonth() + 1)).slice(-2))
+                .replace(/DD/g, ('0' + date.getDate()).slice(-2))
+                .replace(/hh/g, ('0' + date.getHours()).slice(-2))
+                .replace(/mm/g, ('0' + date.getMinutes()).slice(-2))
+                .replace(/ss/g, ('0' + date.getSeconds()).slice(-2));
         }
     },
     methods: {
