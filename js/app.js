@@ -1,5 +1,6 @@
 const GET_KNOWLEDGES_URL   = "data/qiita.json";
 const GET_REPOSITORIES_URL = "https://api.github.com/users/SRAUFactory/repos?per_page=100";
+const DATE_FORMAT = 'YYYY/MM/DD hh:mm:ss';
 
 var app = new Vue({
     el: '#knowledgesRepositores',
@@ -8,26 +9,28 @@ var app = new Vue({
         repositories: [],
     },
     created: function () {
-        this.getKnowledges();
-        this.getRepositories();
+        this.getData(GET_KNOWLEDGES_URL, this.setKnowledges);
+        this.getData(GET_REPOSITORIES_URL, this.setRepositories);
+    },
+    filters: {
+        formatDate: function (dateString) {
+            let date = new Date(dateString);
+            return DATE_FORMAT.replace(/YYYY/g, date.getFullYear())
+                .replace(/MM/g, ('0' + (date.getMonth() + 1)).slice(-2))
+                .replace(/DD/g, ('0' + date.getDate()).slice(-2))
+                .replace(/hh/g, ('0' + date.getHours()).slice(-2))
+                .replace(/mm/g, ('0' + date.getMinutes()).slice(-2))
+                .replace(/ss/g, ('0' + date.getSeconds()).slice(-2));
+        }
     },
     methods: {
-        getKnowledges: function() {
-            var self = this;
-            var callback = function (json) {
-                self.knowledges = json;
-            };
-            this.getData(GET_KNOWLEDGES_URL, callback);
+        setKnowledges: function(json) {
+            this.knowledges = json;
         },
-        getRepositories: function() {
-            var self = this;
-            var callback = function (json) {
-                self.repositories = json;
-                self.repositories.sort(function (value1, value2) {
-                    return value1.pushed_at < value2.pushed_at? 1 : -1; 
-                });
-            };
-            this.getData(GET_REPOSITORIES_URL, callback);
+        setRepositories: function(json) {
+            this.repositories = json.sort(function (value1, value2) {
+                return value1.pushed_at < value2.pushed_at? 1 : -1;
+            });
         },
         getData: function(url, callback) {
             var xhr = new XMLHttpRequest();
