@@ -11,6 +11,11 @@ var app = new Vue({
         this.getKnowledges();
         this.getRepositories();
     },
+    filters: {
+        formatDate: function (v) {
+            return v.replace(/T|Z/g, ' ')
+        }
+    },
     methods: {
         getKnowledges: function() {
             var self = this;
