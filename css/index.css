@@ -20,7 +20,7 @@ body {
     background-size: cover;
 }
 
-.active_back .list_item li a {
+.active_back a {
     color: white;
 }
 
@@ -40,8 +40,7 @@ li {
     width: 50vh;
 }
 
-.header_menu li a,
-.list_item li a {
+a {
     color: #2B66C9;
 }
 
@@ -50,8 +49,8 @@ li {
 }
 
 .list_item li {
-    margin: 20px;
-    padding-bottom: 10px;
+    margin: 5px 20px 0;
+    padding-bottom: 5px;
     border-bottom: solid 1px darkgray;
 }
 
@@ -68,11 +67,16 @@ li {
 
 .section_title {
     font-size: 44px;
+    margin: 0;
+}
+
+.section_sub_title {
+    margin: 0 10vh 5vh;
 }
 
 .text_left {
     text-align: left;
-    margin: 0 8px 0;
+    margin: 0 10vh;
 }
 
 .text_right {
@@ -80,8 +84,8 @@ li {
 }
 
 .link_more {
-    margin-right: 20px; 
-    padding-bottom: 20px;
+    margin: 5px 5px 0 0;
+    padding-bottom: 5px;
 }
 
 @media all and (min-width: 500px) {
@@ -91,9 +95,5 @@ li {
 
     .section_sub_title {
         font-size: 24px;
-    }
-
-    .text_left {
-        margin: 70px;
     }
 }
