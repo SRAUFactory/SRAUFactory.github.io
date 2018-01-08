@@ -14,7 +14,7 @@
                 Freelancer / Remote worker / Nomad worker<br>
                 Programmer / System engineer
                 </p>
-                <p class="text_left">
+                <p class="text_left history">
                 2014年12年: 開業/独立<br>
                 2017年 7月: 株式会社クラウドワークス社よりプロクラウドワーカー認定
                 </p>
@@ -53,7 +53,7 @@
         <section id="knowledgesRepositores" class="wrapper">
             <div id="knowledges" class="column"> 
                 <h1 class="section_title">Knowledges</h1>
-                <ul class="list_item">
+                <ul class="list_item text_left">
                     <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
                         <a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a><br>
                         <span class="grayout" v-for="tag in knowledge.Tags">{{tag.Name}}</span><br>
@@ -67,7 +67,7 @@
 
             <div id="repositores" class="active_back column">
                 <h1 class="section_title">Repositories</h1>
-                <ul class="list_item">
+                <ul class="list_item text_left">
                     <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
                         <a :href="repository.html_url" target="_blank">{{repository.name}}</a><br>
                         <span class="grayout">{{repository.language}}</span><br>
