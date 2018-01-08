@@ -28,10 +28,9 @@ var app = new Vue({
             this.knowledges = json;
         },
         setRepositories: function(json) {
-            json.sort(function (value1, value2) {
+            this.repositories = json.sort(function (value1, value2) {
                 return value1.pushed_at < value2.pushed_at? 1 : -1;
             });
-            this.repositories = json;
         },
         getData: function(url, callback) {
             var xhr = new XMLHttpRequest();
