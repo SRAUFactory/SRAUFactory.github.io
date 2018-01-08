@@ -55,7 +55,7 @@
                 <h1 class="section_title">Knowledges</h1>
                 <ul class="list_item text_left">
                     <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
-                        <div><a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a></div>
+                        <div class="link_title"><a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a></div>
                         <div><span class="grayout" v-for="tag in knowledge.Tags">{{tag.Name}}</span></div>
                         <div class="text_right">{{knowledge.created_at | formatDate}}</div>
                     </li>
@@ -69,7 +69,7 @@
                 <h1 class="section_title">Repositories</h1>
                 <ul class="list_item text_left">
                     <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
-                        <div><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
+                        <div class="link_title"><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
                         <div><span class="grayout">{{repository.language}}</span><br></div>
                         <div class="text_right">{{repository.pushed_at | formatDate}}</div>
                     </li>

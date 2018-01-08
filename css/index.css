@@ -24,6 +24,10 @@ body {
     color: white;
 }
 
+a {
+    color: #2B66C9;
+}
+
 ul {
     width: 100wh;
     padding: 0;
@@ -40,14 +44,14 @@ li {
     width: 50vh;
 }
 
-a {
-    color: #2B66C9;
-}
-
 .list_item li {
     margin: 5px 20px 0;
     padding-bottom: 5px;
     border-bottom: solid 1px darkgray;
+}
+
+.list_item li .link_title {
+    margin-bottom: 5px;
 }
 
 .grayout {
