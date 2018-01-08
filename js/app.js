@@ -9,8 +9,8 @@ var app = new Vue({
         repositories: [],
     },
     created: function () {
-        this.getKnowledges();
-        this.getRepositories();
+        this.getData(GET_KNOWLEDGES_URL, this.setKnowledges);
+        this.getData(GET_REPOSITORIES_URL, this.setRepositories);
     },
     filters: {
         formatDate: function (dateString) {
@@ -24,22 +24,14 @@ var app = new Vue({
         }
     },
     methods: {
-        getKnowledges: function() {
-            var self = this;
-            var callback = function (json) {
-                self.knowledges = json;
-            };
-            this.getData(GET_KNOWLEDGES_URL, callback);
+        setKnowledges: function(json) {
+            this.knowledges = json;
         },
-        getRepositories: function() {
-            var self = this;
-            var callback = function (json) {
-                self.repositories = json;
-                self.repositories.sort(function (value1, value2) {
-                    return value1.pushed_at < value2.pushed_at? 1 : -1; 
-                });
-            };
-            this.getData(GET_REPOSITORIES_URL, callback);
+        setRepositories: function(json) {
+            json.sort(function (value1, value2) {
+                return value1.pushed_at < value2.pushed_at? 1 : -1;
+            });
+            this.repositories = json;
         },
         getData: function(url, callback) {
             var xhr = new XMLHttpRequest();
