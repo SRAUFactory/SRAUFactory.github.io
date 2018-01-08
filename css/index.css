@@ -1,6 +1,7 @@
 body {
     text-align: center;
     margin: 0;
+    color: #2B66C9;
 }
 
 .column {
@@ -19,8 +20,12 @@ body {
     background-size: cover;
 }
 
-.active_back .list_item li a {
+.active_back a {
     color: white;
+}
+
+a {
+    color: #2B66C9;
 }
 
 ul {
@@ -39,20 +44,14 @@ li {
     width: 50vh;
 }
 
-.header_menu li a,
-.list_item li a {
-    color: #2B66C9;
-    font-size: 22px;
-}
-
-.list_item {
-    text-align: left;
-}
-
 .list_item li {
-    margin: 20px;
-    padding-bottom: 10px;
+    margin: 5px 20px 0;
+    padding-bottom: 5px;
     border-bottom: solid 1px darkgray;
+}
+
+.list_item li .link_title {
+    margin-bottom: 5px;
 }
 
 .grayout {
@@ -61,17 +60,26 @@ li {
 }
 
 .list_item li .grayout {
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 3px;
+    font-size: 12px;
+}
+
+.history {
+    margin: 0 10vh;
 }
 
 .section_title {
     font-size: 44px;
+    margin: 0;
+}
+
+.section_sub_title {
+    margin: 0 10vh 5vh;
 }
 
 .text_left {
     text-align: left;
-    margin: 0 8px 0;
 }
 
 .text_right {
@@ -79,7 +87,8 @@ li {
 }
 
 .link_more {
-    margin: 20px; 
+    margin: 5px 5px 0 0;
+    padding-bottom: 5px;
 }
 
 @media all and (min-width: 500px) {
@@ -89,9 +98,5 @@ li {
 
     .section_sub_title {
         font-size: 24px;
-    }
-
-    .text_left {
-        margin: 70px;
     }
 }
