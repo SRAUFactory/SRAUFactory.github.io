@@ -56,8 +56,8 @@
                 <ul class="list_item text_left">
                     <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
                         <div class="link_title"><a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a></div>
-                        <div><span class="grayout" v-for="tag in knowledge.Tags">{{tag.Name}}</span></div>
-                        <div class="text_right">{{knowledge.created_at | formatDate}}</div>
+                        <div><span class="grayout detail" v-for="tag in knowledge.Tags">{{tag.Name}}</span></div>
+                        <div class="text_right detail">{{knowledge.created_at | formatDate}}</div>
                     </li>
                     <div class="link_more text_right">
                         <a href="https://qiita.com/SRAUFactory" target="_blank">もっと見る</a>
@@ -70,8 +70,8 @@
                 <ul class="list_item text_left">
                     <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
                         <div class="link_title"><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
-                        <div><span class="grayout">{{repository.language}}</span><br></div>
-                        <div class="text_right">{{repository.pushed_at | formatDate}}</div>
+                        <div><span class="grayout detail">{{repository.language}}</span><br></div>
+                        <div class="text_right detail">{{repository.pushed_at | formatDate}}</div>
                     </li>
                     <div class="link_more text_right">
                         <a href="https://github.com/SRAUFactory?tab=repositories" target="_blank">もっと見る</a>
