@@ -73,15 +73,6 @@ li {
     margin: 0 10vh;
 }
 
-.section_title {
-    font-size: 44px;
-    margin: 0;
-}
-
-.section_sub_title {
-    margin: 0 10vh 5vh;
-}
-
 .text_left {
     text-align: left;
 }
@@ -98,9 +89,5 @@ li {
 @media all and (min-width: 500px) {
     .wrapper {
         display: flex;
-    }
-
-    .section_sub_title {
-        font-size: 24px;
     }
 }
