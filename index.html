@@ -7,32 +7,32 @@
         <link href="css/index.css" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112748346-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){
-                dataLayer.push(arguments);
-            };
-            gtag('js', new Date());
-            gtag('config', 'UA-112748346-1');
+        <script type="text/javascript">
+window.dataLayer = window.dataLayer || [];
+function gtag(){
+    dataLayer.push(arguments);
+};
+gtag('js', new Date());
+gtag('config', 'UA-112748346-1');
         </script>
     </head>
     <body>
         <section class="wrapper">
             <div id="top" class="active_back column">
-                <h1 class="section_title">SRAU Factory</h1>
-                <p class="section_sub_title">
-                Freelancer / Remote worker / Nomad worker<br>
-                Programmer / System engineer
-                </p>
-                <p class="text_left history">
-                2014年12年: 開業/独立<br>
-                2017年 7月: 株式会社クラウドワークス社よりプロクラウドワーカー認定
-                </p>
+                <h1>SRAU Factory</h1>
+                <h2>Freelancer / Remote worker / Nomad worker / Programmer</h2>
+                <div id="history">
+                    <h2>History</h2>
+                    <p class="text_left history">
+                    2014年12年: 開業/独立<br>
+                    2017年 7月: 株式会社クラウドワークス社よりプロクラウドワーカー認定（現在継続中）
+                    </p>
+                </div>
             </div>
 
             <div id="portfolioAccounts" class="column">
                 <div id="portfolio" class="row">
-                    <h1 class="section_title">Portfolio</h1>
+                    <h2>Portfolio</h2>
                     <ul class="header_menu">
                         <li>
                             <a href="#knowledges">Knowledges</a>
@@ -44,7 +44,7 @@
                 </div>
 
                 <div id="accounts" class="row">
-                    <h1 class="section_title">Accounts</h1>
+                    <h2>Accounts</h2>
                     <ul class="header_menu">
                         <li>
                             <a href="https://qiitadon.com/@sraufactory" target="_blank">Mastodon/Qiitadon</a>
@@ -62,7 +62,7 @@
 
         <section id="knowledgesRepositores" class="wrapper">
             <div id="knowledges" class="column"> 
-                <h1 class="section_title">Knowledges</h1>
+                <h2>Knowledges</h2>
                 <ul class="list_item text_left">
                     <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
                         <div class="link_title"><a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a></div>
@@ -76,7 +76,7 @@
             </div>
 
             <div id="repositores" class="active_back column">
-                <h1 class="section_title">Repositories</h1>
+                <h2>Repositories</h2>
                 <ul class="list_item text_left">
                     <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
                         <div class="link_title"><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
