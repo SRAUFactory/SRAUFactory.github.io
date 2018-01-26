@@ -29,7 +29,6 @@ a {
 }
 
 ul {
-    width: 100wh;
     padding: 0;
     margin: 0 auto;
 }
@@ -39,9 +38,14 @@ li {
     display: block;
 }
 
-.header_menu li {
+.col4 li {
     display: inline-block;
-    width: 33vh;
+    width: 25vh;
+}
+
+.col3 li {
+    display: inline-block;
+     width: 33vh;
 }
 
 .list_item li {
