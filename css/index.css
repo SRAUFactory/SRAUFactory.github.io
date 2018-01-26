@@ -45,7 +45,7 @@ li {
 
 .col3 li {
     display: inline-block;
-     width: 33vh;
+    width: 33vh;
 }
 
 .list_item li {
@@ -93,5 +93,9 @@ li {
 @media all and (min-width: 500px) {
     .wrapper {
         display: flex;
+    }
+
+    li.hide_wide {
+        display: none;
     }
 }
