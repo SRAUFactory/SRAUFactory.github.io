@@ -28,6 +28,10 @@ a {
     color: #2B66C9;
 }
 
+h1 {
+    font-size: 44px;
+}
+
 ul {
     padding: 0;
     margin: 0 auto;
@@ -38,12 +42,7 @@ li {
     display: block;
 }
 
-.col4 li {
-    display: inline-block;
-    width: 25vh;
-}
-
-.col3 li {
+.header_menu li {
     display: inline-block;
     width: 33vh;
 }
@@ -74,7 +73,7 @@ li {
 }
 
 .history {
-    margin: 0 10vh;
+    margin: 0 5vh;
 }
 
 .text_left {
@@ -90,7 +89,7 @@ li {
     padding-bottom: 5px;
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 420px) {
     .wrapper {
         display: flex;
     }
