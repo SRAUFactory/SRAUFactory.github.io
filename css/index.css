@@ -72,6 +72,10 @@ li {
     font-size: 12px;
 }
 
+.detail span{
+    margin: 0px 5px;
+}
+
 .profile {
     margin: 0 5vh;
 }
