@@ -1,6 +1,7 @@
 const GET_KNOWLEDGES_URL   = "data/qiita.json";
 const GET_REPOSITORIES_URL = "https://api.github.com/users/SRAUFactory/repos?per_page=100";
 const DATE_FORMAT = 'YYYY/MM/DD hh:mm:ss';
+const INTERVAL_COUNT = 5000;
 
 var app = new Vue({
     el: '#knowledgesRepositores',
@@ -11,8 +12,8 @@ var app = new Vue({
     created: function () {
         this.getData(GET_KNOWLEDGES_URL, this.setKnowledges);
         this.getData(GET_REPOSITORIES_URL, this.setRepositories);
-        setInterval(this.sortKnowledges, 10000);
-        setInterval(this.sortRepositories, 10000);
+        setInterval(this.sortKnowledges, INTERVAL_COUNT);
+        setInterval(this.sortRepositories, INTERVAL_COUNT);
     },
     filters: {
         formatDate: function (dateString) {
