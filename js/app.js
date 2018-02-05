@@ -11,6 +11,8 @@ var app = new Vue({
     created: function () {
         this.getData(GET_KNOWLEDGES_URL, this.setKnowledges);
         this.getData(GET_REPOSITORIES_URL, this.setRepositories);
+        setInterval(this.sortKnowledges, 10000);
+        setInterval(this.sortRepositories, 10000);
     },
     filters: {
         formatDate: function (dateString) {
