@@ -25,7 +25,8 @@ var app = new Vue({
     },
     methods: {
         setKnowledges: function(json) {
-            this.knowledges = json;
+            let sortKeys = ["updated_at", "created_at", "likes_count", "comments_count"];
+            this.knowledges = this.sortData(json, sortKeys);
         },
         setRepositories: function(json) {
             let sortKeys = ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"];
