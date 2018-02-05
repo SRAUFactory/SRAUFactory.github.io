@@ -29,11 +29,7 @@ var app = new Vue({
         },
         setRepositories: function(json) {
             let sortKeys = ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"];
-            let random = Math.random();
-            let sortKey = sortKeys[Math.floor(random *  sortKeys.length)];
-            this.repositories = json.sort(function (value1, value2) {
-                return value1[sortKey] < value2[sortKey] ? 1 : -1;
-            });
+            this.repositories = this.sortData(json, sortKeys);
         },
         getData: function(url, callback) {
             var xhr = new XMLHttpRequest();
@@ -42,6 +38,13 @@ var app = new Vue({
                 callback(JSON.parse(xhr.responseText));
             };
             xhr.send();
+        },
+        sortData: function(data, sortKeys) {
+            let random = Math.random();
+            let sortKey = sortKeys[Math.floor(random *  sortKeys.length)];
+            return data.sort(function (value1, value2) {
+                return value1[sortKey] < value2[sortKey] ? 1 : -1;
+            });
         }
     }
 });
