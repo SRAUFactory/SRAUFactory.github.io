@@ -28,8 +28,11 @@ var app = new Vue({
             this.knowledges = json;
         },
         setRepositories: function(json) {
+            let sortKeys = ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"];
+            let random = Math.random();
+            let sortKey = sortKeys[Math.floor(random *  sortKeys.length)];
             this.repositories = json.sort(function (value1, value2) {
-                return value1.pushed_at < value2.pushed_at? 1 : -1;
+                return value1[sortKey] < value2[sortKey] ? 1 : -1;
             });
         },
         getData: function(url, callback) {
