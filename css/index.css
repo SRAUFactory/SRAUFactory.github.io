@@ -93,6 +93,10 @@ li {
     padding-bottom: 5px;
 }
 
+.flip-list-move {
+    transition: transform 1s;
+}
+
 @media all and (min-width: 420px) {
     .wrapper {
         display: flex;
