@@ -1,6 +1,7 @@
 const GET_KNOWLEDGES_URL   = "data/qiita.json";
 const GET_REPOSITORIES_URL = "https://api.github.com/users/SRAUFactory/repos?per_page=100";
 const DATE_FORMAT = 'YYYY/MM/DD hh:mm:ss';
+const INTERVAL_COUNT = 5000;
 
 var app = new Vue({
     el: '#knowledgesRepositores',
@@ -11,6 +12,8 @@ var app = new Vue({
     created: function () {
         this.getData(GET_KNOWLEDGES_URL, this.setKnowledges);
         this.getData(GET_REPOSITORIES_URL, this.setRepositories);
+        setInterval(this.sortKnowledges, INTERVAL_COUNT);
+        setInterval(this.sortRepositories, INTERVAL_COUNT);
     },
     filters: {
         formatDate: function (dateString) {
@@ -26,11 +29,18 @@ var app = new Vue({
     methods: {
         setKnowledges: function(json) {
             this.knowledges = json;
+            this.sortKnowledges();
+        },
+        sortKnowledges: function() {
+            this.sortData(this.knowledges, ["updated_at", "created_at", "likes_count", "comments_count"]);
         },
         setRepositories: function(json) {
-            this.repositories = json.sort(function (value1, value2) {
-                return value1.pushed_at < value2.pushed_at? 1 : -1;
-            });
+            this.repositories = json;
+            this.sortRepositories();
+        },
+        sortRepositories() {
+            let sortKeys = ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"];
+            this.repositories = this.sortData(this.repositories, sortKeys);
         },
         getData: function(url, callback) {
             var xhr = new XMLHttpRequest();
@@ -39,6 +49,13 @@ var app = new Vue({
                 callback(JSON.parse(xhr.responseText));
             };
             xhr.send();
+        },
+        sortData: function(data, sortKeys) {
+            let random = Math.random();
+            let sortKey = sortKeys[Math.floor(random *  sortKeys.length)];
+            return data.sort(function (value1, value2) {
+                return value1[sortKey] < value2[sortKey] ? 1 : -1;
+            });
         }
     }
 });
