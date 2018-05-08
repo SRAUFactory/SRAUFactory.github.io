@@ -91,7 +91,7 @@ gtag('config', 'UA-112748346-1');
                 <transition-group name="flip-list" tag="ul" class="list_item text_left">
                     <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
                         <div class="link_title"><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
-                        <div><span class="grayout detail">{{repository.language}}</span><br></div>
+                        <div><span class="grayout detail" v-if="repository.language">{{repository.language}}</span><br></div>
                         <div class="text_right detail">
                             <span>Watch: {{repository.watchers_count}}</span>
                             <span>Star: {{repository.stargazers_count}}</span>
