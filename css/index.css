@@ -43,8 +43,8 @@ li {
 }
 
 .header_menu li {
-    display: inline-block;
-    width: 33vh;
+    display: inline-table;
+    width: 20vh;
 }
 
 .list_item li {
