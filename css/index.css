@@ -42,11 +42,6 @@ li {
     display: block;
 }
 
-.header_menu li {
-    display: inline-table;
-    width: 20vh;
-}
-
 .list_item li {
     margin: 5px 20px 0;
     padding-bottom: 5px;
@@ -100,6 +95,11 @@ li {
 @media all and (min-width: 420px) {
     .wrapper {
         display: flex;
+    }
+
+    .header_menu li {
+        display: inline-table;
+        width: 20vh;
     }
 
     li.hide_wide {
