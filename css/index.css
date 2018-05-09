@@ -92,6 +92,10 @@ li {
     transition: transform 1s;
 }
 
+#profileAccounts {
+    border-bottom: solid 3px #2B66C9;
+}
+
 @media all and (min-width: 420px) {
     .wrapper {
         display: flex;
@@ -104,5 +108,9 @@ li {
 
     li.hide_wide {
         display: none;
+    }
+
+    #profileAccounts {
+        border-bottom: none;
     }
 }
