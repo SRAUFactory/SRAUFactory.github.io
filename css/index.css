@@ -10,7 +10,7 @@ body {
 }
 
 .column > .row {
-    height: 35vh;
+    height: 40vh;
 }
 
 .active_back {
@@ -99,6 +99,10 @@ li {
 @media all and (min-width: 420px) {
     .wrapper {
         display: flex;
+    }
+
+    .column > .row {
+       height: 33vh;
     }
 
     .header_menu li {
