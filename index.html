@@ -79,8 +79,7 @@ gtag('config', 'UA-112748346-1');
 
         <section id="knowledgesRepositores" class="wrapper">
             <div id="knowledges" class="column"> 
-                <h2>Knowledges</h2>
-                <h3>{{knowledges.length}} knowledges</h3>
+                <h2>{{knowledges.length}} knowledges</h2>
                 <transition-group name="flip-list" tag="ul" class="list_item text_left">
                     <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
                         <div class="link_title"><a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a></div>
@@ -98,8 +97,7 @@ gtag('config', 'UA-112748346-1');
             </div>
 
             <div id="repositores" class="active_back column">
-                <h2>Repositories</h2>
-                <h3>{{repositories.length}} repositories</h3>
+                <h2>{{repositories.length}} repositories</h2>
                 <transition-group name="flip-list" tag="ul" class="list_item text_left">
                     <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
                         <div class="link_title"><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
