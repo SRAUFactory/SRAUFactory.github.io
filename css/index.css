@@ -97,10 +97,6 @@ li {
         display: flex;
     }
 
-    .column > .row {
-       height: 25vh;
-    }
-
     .header_menu li {
         display: inline-table;
         width: 20vh;
