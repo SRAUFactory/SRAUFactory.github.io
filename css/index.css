@@ -9,10 +9,6 @@ body {
     min-height: 100vh;
 }
 
-.column > .row {
-    height: 40vh;
-}
-
 .active_back {
     background-color: #2B66C9;
     opacity: 0.95;
@@ -102,7 +98,7 @@ li {
     }
 
     .column > .row {
-       height: 33vh;
+       height: 25vh;
     }
 
     .header_menu li {
