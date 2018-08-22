@@ -9,10 +9,6 @@ body {
     min-height: 100vh;
 }
 
-.column > .row {
-    height: 40vh;
-}
-
 .active_back {
     background-color: #2B66C9;
     opacity: 0.95;
@@ -99,10 +95,6 @@ li {
 @media all and (min-width: 420px) {
     .wrapper {
         display: flex;
-    }
-
-    .column > .row {
-       height: 33vh;
     }
 
     .header_menu li {
