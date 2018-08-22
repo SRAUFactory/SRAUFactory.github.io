@@ -28,6 +28,10 @@ h1 {
     font-size: 44px;
 }
 
+h2 {
+    margin: 10px;
+}
+
 ul {
     padding: 0;
     margin: 0 auto;
@@ -95,6 +99,10 @@ li {
 @media all and (min-width: 420px) {
     .wrapper {
         display: flex;
+    }
+
+    .column > .row {
+       margin-top: 50px;
     }
 
     .header_menu li {
