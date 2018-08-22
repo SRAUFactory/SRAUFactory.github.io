@@ -28,6 +28,10 @@ h1 {
     font-size: 44px;
 }
 
+h2 {
+    margin: 10px;
+}
+
 ul {
     padding: 0;
     margin: 0 auto;
@@ -67,7 +71,7 @@ li {
     margin: 0px 5px;
 }
 
-.profile {
+.history {
     margin: 0 5vh;
 }
 
@@ -88,13 +92,17 @@ li {
     transition: transform 1s;
 }
 
-#profileAccounts {
+#historyAccounts {
     border-bottom: solid 3px #2B66C9;
 }
 
 @media all and (min-width: 420px) {
     .wrapper {
         display: flex;
+    }
+
+    .column > .row {
+       margin-top: 50px;
     }
 
     .header_menu li {
@@ -106,7 +114,7 @@ li {
         display: none;
     }
 
-    #profileAccounts {
+    #historyAccounts {
         border-bottom: none;
     }
 }
