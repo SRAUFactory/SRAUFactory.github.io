@@ -67,7 +67,7 @@ li {
     margin: 0px 5px;
 }
 
-.profile {
+.history {
     margin: 0 5vh;
 }
 
@@ -88,7 +88,7 @@ li {
     transition: transform 1s;
 }
 
-#profileAccounts {
+#historyAccounts {
     border-bottom: solid 3px #2B66C9;
 }
 
@@ -106,7 +106,7 @@ li {
         display: none;
     }
 
-    #profileAccounts {
+    #historyAccounts {
         border-bottom: none;
     }
 }
