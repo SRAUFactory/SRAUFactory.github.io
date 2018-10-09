@@ -1,6 +1,6 @@
 const GET_KNOWLEDGES_URL   = "data/qiita.json";
 const GET_REPOSITORIES_URL = "https://api.github.com/users/SRAUFactory/repos?per_page=100";
-const DATE_FORMAT = 'YYYY/MM/DD hh:mm:ss';
+const DATE_FORMAT = 'YYYY/MM/DD';
 const INTERVAL_COUNT = 5000;
 
 var app = new Vue({
