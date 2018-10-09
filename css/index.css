@@ -100,7 +100,7 @@ li {
     display: none;
 }
 
-@media all and (min-width: 420px) {
+@media all and (min-width: 850px) {
     .wrapper {
         display: flex;
     }
@@ -116,14 +116,6 @@ li {
 
     li.hide_wide { 
         display: none;
-    }
-
-    .hide_wide {
-        display: none;
-    }
-    
-    .hide_normal {
-        display: inline;
     }
 
     #profileAccounts {
