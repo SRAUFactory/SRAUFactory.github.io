@@ -96,6 +96,10 @@ li {
     border-bottom: solid 3px #2B66C9;
 }
 
+.hide_normal {
+    display: none;
+}
+
 @media all and (min-width: 420px) {
     .wrapper {
         display: flex;
@@ -110,8 +114,16 @@ li {
         width: 20vh;
     }
 
-    li.hide_wide {
+    li.hide_wide { 
         display: none;
+    }
+
+    .hide_wide {
+        display: none;
+    }
+    
+    .hide_normal {
+        display: inline;
     }
 
     #historyAccounts {

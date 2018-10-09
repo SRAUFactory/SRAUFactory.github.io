@@ -127,7 +127,10 @@ gtag('config', 'UA-112748346-1');
                             <span>Star: {{repository.stargazers_count}}</span>
                             <span>Fork: {{repository.forks_count}}</span>
                             <span>Issues: {{repository.open_issues_count}}</span>
-                            <span>{{repository.pushed_at | formatDate}}</span>
+                            <span class="hide_normal">{{repository.pushed_at | formatDate}}</span>
+                        </div>
+                        <div class="text_right detail hide_wide">
+                            <span >{{repository.pushed_at | formatDate}}</span>
                         </div>
                     </li>
                 </transition-group>
