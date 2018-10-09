@@ -96,8 +96,9 @@ li {
     border-bottom: solid 3px #2B66C9;
 }
 
-.hide_normal {
-    display: none;
+.header_menu li {
+    display: inline-table;
+    width: 25vh;
 }
 
 @media all and (min-width: 420px) and (min-height: 420px) {
@@ -107,11 +108,6 @@ li {
 
     .column > .row {
        margin-top: 50px;
-    }
-
-    .header_menu li {
-        display: inline-table;
-        width: 20vh;
     }
 
     li.hide_wide { 
