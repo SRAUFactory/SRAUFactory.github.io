@@ -1,4 +1,4 @@
 # SRAUFactory.github.io
-SRAU Factory's portfolio pages
+SRAU Factory's Official Site
 
 See [here!!](https://sraufactory.github.io/)
