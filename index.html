@@ -108,7 +108,7 @@ gtag('config', 'UA-112748346-1');
                         <div class="text_right detail">
                             <span>いいね: {{knowledge.likes_count}}</span>
                             <span>コメント: {{knowledge.comments_count}}</span>
-                            <span>{{knowledge.created_at | formatDate}}</span>
+                            <span>更新日: {{knowledge.updated_at | formatDate}}</span>
                         </div>
                     </li>
                 </transition-group>
@@ -128,7 +128,7 @@ gtag('config', 'UA-112748346-1');
                             <span>Star: {{repository.stargazers_count}}</span>
                             <span>Fork: {{repository.forks_count}}</span>
                             <span>Issues: {{repository.open_issues_count}}</span>
-                            <span>{{repository.pushed_at | formatDate}}</span>
+                            <span>Updated: {{repository.pushed_at | formatDate}}</span>
                         </div>
                     </li>
                 </transition-group>
