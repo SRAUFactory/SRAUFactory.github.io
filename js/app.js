@@ -38,22 +38,18 @@ var app = new Vue({
             this.repositories = json;
             this.sortRepositories();
         },
-        sortRepositories() {
+        sortRepositories: function() {
             let sortKeys = ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"];
             this.repositories.sort(this.getSortProcess(sortKeys));
         },
         getData: function(url, callback) {
             fetch(url)
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(json) {
-                callback(json);
-            });
+            .then(response => response.json())
+            .then(json => callback(json));
         },
         getSortProcess: function(sortKeys) {
             let sortKey = sortKeys[Math.floor(Math.random() *  sortKeys.length)];
-            return function (value1, value2) {
+            return (value1, value2) => {
                 return value1[sortKey] < value2[sortKey] ? 1 : -1;
             };
         }
