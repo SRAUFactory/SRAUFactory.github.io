@@ -39,8 +39,9 @@ var app = new Vue({
             this.sortRepositories();
         },
         sortRepositories: function() {
-            let sortKeys = ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"];
-            this.repositories.sort(this.getSortProcess(sortKeys));
+            this.repositories.sort(this.getSortProcess(
+                ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"]
+            ));
         },
         getData: (url) => {
             return fetch(url)
