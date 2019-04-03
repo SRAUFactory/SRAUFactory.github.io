@@ -10,8 +10,8 @@ var app = new Vue({
         repositories: [],
     },
     created: function () {
-        this.getData(GET_KNOWLEDGES_URL, this.setKnowledges);
-        this.getData(GET_REPOSITORIES_URL, this.setRepositories);
+        this.getData(GET_KNOWLEDGES_URL).then(json => this.setKnowledges(json));
+        this.getData(GET_REPOSITORIES_URL).then(json => this.setRepositories(json));
         setInterval(this.sortKnowledges, INTERVAL_COUNT);
         setInterval(this.sortRepositories, INTERVAL_COUNT);
     },
@@ -32,30 +32,26 @@ var app = new Vue({
             this.sortKnowledges();
         },
         sortKnowledges: function() {
-            this.sortData(this.knowledges, ["updated_at", "created_at", "likes_count", "comments_count"]);
+            this.knowledges.sort(this.getSortProcess(["updated_at", "created_at", "likes_count", "comments_count"]));
         },
         setRepositories: function(json) {
             this.repositories = json;
             this.sortRepositories();
         },
-        sortRepositories() {
-            let sortKeys = ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"];
-            this.repositories = this.sortData(this.repositories, sortKeys);
+        sortRepositories: function() {
+            this.repositories.sort(this.getSortProcess(
+                ["pushed_at", "created_at", "watchers_count", "stargazers_count", "forks_count", "open_issues_count"]
+            ));
         },
-        getData: function(url, callback) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", url);
-            xhr.onload = function () {
-                callback(JSON.parse(xhr.responseText));
-            };
-            xhr.send();
+        getData: (url) => {
+            return fetch(url)
+            .then(response => response.json());
         },
-        sortData: function(data, sortKeys) {
-            let random = Math.random();
-            let sortKey = sortKeys[Math.floor(random *  sortKeys.length)];
-            return data.sort(function (value1, value2) {
+        getSortProcess: (sortKeys) => {
+            let sortKey = sortKeys[Math.floor(Math.random() *  sortKeys.length)];
+            return (value1, value2) => {
                 return value1[sortKey] < value2[sortKey] ? 1 : -1;
-            });
+            };
         }
     }
 });
