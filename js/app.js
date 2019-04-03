@@ -43,12 +43,13 @@ var app = new Vue({
             this.repositories.sort(this.getSortProcess(sortKeys));
         },
         getData: function(url, callback) {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", url);
-            xhr.onload = function () {
-                callback(JSON.parse(xhr.responseText));
-            };
-            xhr.send();
+            fetch(url)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(json) {
+                callback(json);
+            });
         },
         getSortProcess: function(sortKeys) {
             let sortKey = sortKeys[Math.floor(Math.random() *  sortKeys.length)];
