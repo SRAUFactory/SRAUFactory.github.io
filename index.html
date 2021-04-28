@@ -30,19 +30,16 @@ gtag('config', 'UA-112748346-1');
             <div id="top" class="active_back column">
                 <h1>SRAU Factory</h1>
                 <h2>Freelancer / Programmer / Remote worker</h2>
-                <div id="menu">
+                <div id="menu" class="row hide_wide">
                     <h2>Menu</h2>
                     <ul class="header_menu">
-                        <li class="hide_wide">
-                            <a href="#profileAccounts">Profile</a>
-                        </li>
-                        <li class="hide_wide">
+                        <li>
                             <a href="#profileAccounts">Accounts</a>
                         </li>
-                        <li class="hide_wide">
+                        <li>
                             <a href="#profileAccounts">Services</a>
                         </li>
-                        <li class="hide_wide">
+                        <li>
                             <a href="#profileAccounts">Records</a>
                         </li>
                         <li>
@@ -53,9 +50,6 @@ gtag('config', 'UA-112748346-1');
                         </li>
                     </ul>
                 </div>
-            </div>
-
-            <div id="profileAccounts" class="column">
                 <div id="profile" class="row">
                     <h2>Profile</h2>
                     <ul class="text_left profile">
@@ -65,7 +59,9 @@ gtag('config', 'UA-112748346-1');
                         <li>2018年1月: 当サイト開設</li>
                     </ul>
                 </div>
+            </div>
 
+            <div id="profileAccounts" class="column">
                 <div id="accounts" class="row">
                     <h2>Accounts</h2>
                     <ul class="header_menu">
@@ -111,7 +107,7 @@ gtag('config', 'UA-112748346-1');
             <div id="knowledges" class="column"> 
                 <h2>{{knowledges.length}} knowledges</h2>
                 <transition-group name="flip-list" tag="ul" class="list_item text_left">
-                    <li v-for="(knowledge, index) in knowledges" v-if="index < 5" v-bind:key="knowledge.Id">
+                    <li v-for="(knowledge, index) in knowledges" v-if="index < 3" v-bind:key="knowledge.Id">
                         <div class="link_title"><a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a></div>
                         <div><span class="grayout detail" v-for="tag in knowledge.Tags">{{tag.Name}}</span></div>
                         <div class="text_right detail">
@@ -129,7 +125,7 @@ gtag('config', 'UA-112748346-1');
             <div id="repositores" class="active_back column">
                 <h2>{{repositories.length}} repositories</h2>
                 <transition-group name="flip-list" tag="ul" class="list_item text_left">
-                    <li v-for="(repository, index) in repositories" v-if="index < 5" v-bind:key="repository.name">
+                    <li v-for="(repository, index) in repositories" v-if="index < 3" v-bind:key="repository.name">
                         <div class="link_title"><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
                         <div><span class="grayout detail" v-if="repository.language">{{repository.language}}</span><br></div>
                         <div class="text_right detail">

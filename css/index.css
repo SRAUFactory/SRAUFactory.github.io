@@ -114,7 +114,7 @@ li {
        margin-top: 50px;
     }
 
-    li.hide_wide { 
+    .hide_wide { 
         display: none;
     }
 
