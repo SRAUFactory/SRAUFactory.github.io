@@ -106,6 +106,10 @@ li {
         display: flex;
     }
 
+    .column {
+        min-height: 50vh;
+    }
+
     .column > .row {
        margin-top: 50px;
     }
