@@ -6,7 +6,8 @@ body {
 
 .column {
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
+    margin-bottom: 10px;
 }
 
 .active_back {
@@ -26,6 +27,7 @@ a {
 
 h1 {
     font-size: 44px;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -73,6 +75,7 @@ li {
 
 .profile {
     margin: 0 5vh;
+    padding-bottom: 10px;
 }
 
 .text_left {
@@ -98,7 +101,7 @@ li {
 
 .header_menu li {
     display: inline-table;
-    width: 25vh;
+    width: 15vh;
 }
 
 @media all and (min-width: 420px) and (min-height: 420px) {
@@ -114,7 +117,7 @@ li {
        margin-top: 50px;
     }
 
-    .hide_wide { 
+    li.hide_wide { 
         display: none;
     }
 
