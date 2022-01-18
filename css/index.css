@@ -44,7 +44,7 @@ li {
 }
 
 .list_item li {
-    margin: 5px 20px 0;
+    margin: 5px 10px 0;
     padding-bottom: 5px;
     border-bottom: solid 1px darkgray;
 }
@@ -69,7 +69,7 @@ li {
 }
 
 .detail span{
-    margin: 0px 5px;
+    margin: 0px;
 }
 
 .profile {
@@ -86,7 +86,7 @@ li {
 }
 
 .link_more {
-    margin: 5px 20px 0 0;
+    margin: 5px 5px 0 0;
     padding-bottom: 5px;
 }
 
