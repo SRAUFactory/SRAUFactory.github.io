@@ -103,7 +103,7 @@ li {
     width: 15vh;
 }
 
-@media all and (min-width: 420px) and (min-height: 420px) {
+@media all and (min-width: 500px) and (min-height: 500px) {
     .wrapper {
         display: flex;
     }
