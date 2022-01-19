@@ -6,7 +6,7 @@ body {
 
 .column {
     width: 100%;
-    min-height: 50vh;
+    min-height: 50%;
 }
 
 .active_back {
