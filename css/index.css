@@ -98,6 +98,10 @@ li {
     border-bottom: solid 3px #2B66C9;
 }
 
+.header_menu {
+    margin: 0 10px;
+}
+
 .header_menu li {
     display: inline-table;
     margin: 5px;
