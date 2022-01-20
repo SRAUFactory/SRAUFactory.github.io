@@ -72,7 +72,7 @@ li {
     margin: 0px;
 }
 
-.profile {
+.history {
     margin: 0 2vh;
     padding-bottom: 1vh;
 }
@@ -100,7 +100,7 @@ li {
 
 .header_menu li {
     display: inline-table;
-    width: 20vh;
+    width: 17vh;
 }
 
 @media all and (min-width: 500px) and (min-height: 500px) {
