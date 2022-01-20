@@ -100,7 +100,7 @@ li {
 
 .header_menu li {
     display: inline-table;
-    width: 17vh;
+    margin: 5px;
 }
 
 @media all and (min-width: 500px) and (min-height: 500px) {
