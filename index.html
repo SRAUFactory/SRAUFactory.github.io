@@ -34,8 +34,11 @@ gtag('config', 'UA-112748346-1');
                 <h1>SRAU Factory</h1>
                 <h2>Freelancer / Programmer / Remote worker</h2>
                 <div id="contacts" class="row">
-                    <h2>Contacts</h2>
+                    <h3>Contacts</h3>
                     <ul class="header_menu">
+                        <li>
+                            <a href="https://mstdn.jp/@sraufactory" target="_blank">Mastdon</a>
+                        </li>
                         <li>
                             <a href="https://qiitadon.com/@sraufactory" target="_blank">Qiitadon</a>
                         </li>
@@ -45,19 +48,16 @@ gtag('config', 'UA-112748346-1');
                         <li>
                             <a href="https://crowdworks.jp/public/employees/741010" target="_blank">CrowdWorks</a>
                         </li>
-                        <li>
-                            <a href="https://service.visasq.com/users/5868210781945856" target="_blank">ビザスク</a>
-                        </li>
-                        <li>
-                            <a href="https://www.codeal.work/users/40a0d51b-7791-43b3-9ed9-7b9abf485170" target="_blank">CODEAL</a>
-                        </li>
                     </ul>
                 </div>
                 <div id="works" class="row">
-                    <h2>Works</h2>
+                    <h3>Works</h3>
                     <ul class="header_menu">
                         <li>
-                            <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">CrowdWorks</a>
+                            <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">Contracts</a>
+                        </li>
+                        <li>
+                            <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">Occupations</a>
                         </li>
                         <li>
                             <a href="https://crowdworks.jp/public/employees/741010/resumes" target="_blank">Projects</a>
@@ -76,7 +76,7 @@ gtag('config', 'UA-112748346-1');
             </div>
             <div id="profileAccounts" class="column">
                 <div id="history" class="row">
-                    <h2>History</h2>
+                    <h3>History</h3>
                     <ul class="text_left history">
                         <li>2014年12月: 開業。企業常駐の案件を中心に活動</li>
                         <li>2016年1月: テレワーク/リモートワークを中心とした活動を開始</li>
@@ -90,7 +90,7 @@ gtag('config', 'UA-112748346-1');
 
         <section id="knowledgesRepositores" class="wrapper">
             <div id="knowledges" class="column"> 
-                <h2>{{knowledges.length}} knowledges</h2>
+                <h3>{{knowledges.length}} knowledges</h3>
                 <transition-group name="flip-list" tag="ul" class="list_item text_left">
                     <li v-for="(knowledge, index) in knowledges" v-if="index < 3" v-bind:key="knowledge.Id">
                         <div class="link_title"><a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a></div>
@@ -108,7 +108,7 @@ gtag('config', 'UA-112748346-1');
             </div>
 
             <div id="repositores" class="active_back column">
-                <h2>{{repositories.length}} repositories</h2>
+                <h3>{{repositories.length}} repositories</h3>
                 <transition-group name="flip-list" tag="ul" class="list_item text_left">
                     <li v-for="(repository, index) in repositories" v-if="index < 3" v-bind:key="repository.name">
                         <div class="link_title"><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
