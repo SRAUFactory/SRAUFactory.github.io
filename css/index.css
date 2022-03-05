@@ -26,6 +26,11 @@ a {
     color: #2B66C9;
 }
 
+h1 {
+    font-size: 36px;
+    margin-top: 1vh;
+}
+
 ul {
     padding: 0;
 }
