@@ -32,100 +32,69 @@ gtag('config', 'UA-112748346-1');
         <section class="wrapper">
             <div id="top" class="active_back column">
                 <h1>SRAU Factory</h1>
-                <h2>Freelancer / Programmer / Remote worker</h2>
-                <div id="contacts" class="row">
-                    <h3>Contacts</h3>
-                    <ul class="header_menu">
-                        <li>
-                            <a href="https://mstdn.jp/@sraufactory" target="_blank">Mastdon</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/SRAUFactory" target="_blank">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://crowdworks.jp/public/employees/741010" target="_blank">CrowdWorks</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="works" class="row">
-                    <h3>Works</h3>
-                    <ul class="header_menu">
-                        <li>
-                            <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">Contracts</a>
-                        </li>
-                        <li>
-                            <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">Occupations</a>
-                        </li>
-                        <li>
-                            <a href="https://crowdworks.jp/public/employees/741010/resumes" target="_blank">Projects</a>
-                        </li>
-                        <li>
-                            <a href="https://sraufactory.github.io/web-data-editor/" target="_blank">Web Data Editor</a>
-                        </li>
-                        <li class="hide_wide">
-                            <a href="#knowledges">Knowledges</a>
-                        </li>
-                        <li class="hide_wide">
-                            <a href="#repositores">Repositories</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="header_menu">
+                    <li><h2>Freelancer</h2></li>
+                    <li><h2>Programmer</h2></li>
+                    <li><h2>Remote worker</h2></li>
+                </ul>
+                <ul class="header_menu hide_wide">
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#works">Works</a></li>
+                </ul>
             </div>
-            <div id="profileAccounts" class="column">
-                <div id="history" class="row">
-                    <h3>History</h3>
-                    <ul class="text_left history">
-                        <li>2014年12月: 開業。企業常駐の案件を中心に活動</li>
-                        <li>2016年1月: テレワーク/リモートワークを中心とした活動を開始</li>
-                        <li>2017年7月: 株式会社クラウドワークス社よりプロクラウドワーカー認定（〜2019年 1月）</li>
-                        <li>2018年1月: 当サイト開設</li>
-                    </ul>
-                </div>
-                
+
+            <div id="history" class="column">
+                <h2>History</h2>
+                <ul class="text_left history">
+                    <li>2014年12月: 開業。企業常駐の案件を中心に活動</li>
+                    <li>2016年1月: テレワーク/リモートワークを中心とした活動を開始</li>
+                    <li>2017年7月: 株式会社クラウドワークス社よりプロクラウドワーカー認定（〜2019年 1月）</li>
+                    <li>2018年1月: 当サイト開設</li>
+                    <li>2022年3月: 当サイトリニューアル</li>
+                </ul>
             </div>
         </section>
 
-        <section id="knowledgesRepositores" class="wrapper">
-            <div id="knowledges" class="column"> 
-                <h3>{{knowledges.length}} knowledges</h3>
-                <transition-group name="flip-list" tag="ul" class="list_item text_left">
-                    <li v-for="(knowledge, index) in knowledges" v-if="index < 3" v-bind:key="knowledge.Id">
-                        <div class="link_title"><a :href="knowledge.Url" target="_blank">{{knowledge.Title}}</a></div>
-                        <div><span class="grayout detail" v-for="tag in knowledge.Tags">{{tag.Name}}</span></div>
-                        <div class="text_right detail">
-                            <span>いいね: {{knowledge.likes_count}}</span>
-                            <span>コメント: {{knowledge.comments_count}}</span>
-                            <span>更新日: {{knowledge.updated_at | formatDate}}</span>
-                        </div>
+        <section class="wrapper">
+            <div id="contacts" class="column">
+                <h2>Contacts</h2>
+                <ul class="header_menu">
+                    <li>
+                        <a href="https://mstdn.jp/@sraufactory" target="_blank">Mastdon</a>
                     </li>
-                </transition-group>
-                <div class="link_more text_right">
-                    <a href="https://qiita.com/SRAUFactory" target="_blank">more</a>
-                </div>
+                    <li>
+                        <a href="https://twitter.com/SRAUFactory" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://crowdworks.jp/public/employees/741010" target="_blank">CrowdWorks</a>
+                    </li>
+                </ul>
             </div>
 
-            <div id="repositores" class="active_back column">
-                <h3>{{repositories.length}} repositories</h3>
-                <transition-group name="flip-list" tag="ul" class="list_item text_left">
-                    <li v-for="(repository, index) in repositories" v-if="index < 3" v-bind:key="repository.name">
-                        <div class="link_title"><a :href="repository.html_url" target="_blank">{{repository.name}}</a></div>
-                        <div><span class="grayout detail" v-if="repository.language">{{repository.language}}</span><br></div>
-                        <div class="text_right detail">
-                            <span>Watch: {{repository.watchers_count}}</span>
-                            <span>Star: {{repository.stargazers_count}}</span>
-                            <span>Fork: {{repository.forks_count}}</span>
-                            <span>Issues: {{repository.open_issues_count}}</span>
-                            <span>Updated: {{repository.pushed_at | formatDate}}</span>
-                        </div>
+            <div id="works" class="active_back column">
+                <h2>Works</h2>
+                <ul class="header_menu">
+                    <li>
+                        <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">Contracts</a>
                     </li>
-                </transition-group>
-                <div class="link_more text_right">
-                    <a href="https://github.com/SRAUFactory?tab=repositories" target="_blank">more</a>
-                </div>
+                    <li>
+                        <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">Occupations</a>
+                    </li>
+                    <li>
+                        <a href="https://crowdworks.jp/public/employees/741010/resumes" target="_blank">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://sraufactory.github.io/web-data-editor/" target="_blank">Web Data Editor</a>
+                    </li>
+                    <li>
+                        <a href="https://qiita.com/SRAUFactory" target="_blank">Knowledges</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SRAUFactory?tab=repositories" target="_blank">Repositories</a>
+                    </li>
+                </ul>
             </div>
         </section>
-        <script src="js/vue.min.js"></script>
         <script src="js/smoothscroll.min.js"></script>
-        <script src="js/app.js"></script>
     </body>
 </html>

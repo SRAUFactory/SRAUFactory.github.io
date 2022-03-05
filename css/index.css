@@ -7,6 +7,7 @@ body {
 .column {
     width: 100%;
     min-height: 50%;
+    padding: 1vh;
 }
 
 .active_back {
@@ -14,6 +15,7 @@ body {
     opacity: 0.95;
     color: white;
     background-size: cover;
+    border-bottom: solid 3px #2B66C9;
 }
 
 .active_back a {
@@ -25,56 +27,18 @@ a {
 }
 
 h1 {
-    font-size: 44px;
-    margin: 0px;
-}
-
-h2, h3 {
-    margin: 0px;
+    font-size: 36px;
+    margin-top: 1vh;
 }
 
 ul {
     padding: 0;
-    margin: 0 auto;
 }
 
 li {
     list-style-type: none;
     display: block;
-}
-
-.list_item li {
-    margin: 5px 10px 0;
-    padding-bottom: 5px;
-    border-bottom: solid 1px darkgray;
-}
-
-.list_item li .link_title {
-    margin-bottom: 5px;
-}
-
-.grayout {
-    color: white;
-    background-color: darkgray;
-}
-
-.list_item li .grayout {
-    margin-right: 5px;
-    padding: 3px;
-    font-size: 12px;
-}
-
-.list_item .detail {
-    font-size: 12px;
-}
-
-.detail span{
-    margin: 0px;
-}
-
-.history {
-    margin: 0 2vh;
-    padding-bottom: 1vh;
+    margin: 2vh;
 }
 
 .text_left {
@@ -85,47 +49,30 @@ li {
     text-align: right;
 }
 
-.link_more {
-    margin: 5px 5px 0 0;
-    padding-bottom: 5px;
-}
-
-.flip-list-move {
-    transition: transform 1s;
-}
-
-#profileAccounts {
-    border-bottom: solid 3px #2B66C9;
-}
-
 .header_menu {
-    margin: 0 10px;
+    padding: 0;
 }
 
-.header_menu li {
-    display: inline-table;
-    margin: 5px;
-    width: 17vh;
+.wrapper {
+    border-top: solid 3px #2B66C9;
 }
 
 @media all and (min-width: 500px) and (min-height: 500px) {
     .wrapper {
         display: flex;
+        border-top: none;
     }
 
     .column {
         min-height: 50vh;
+        width: 50%;
     }
 
     .column > .row {
        margin-top: 1vh;
     }
 
-    li.hide_wide { 
+    .hide_wide { 
         display: none;
-    }
-
-    #profileAccounts {
-        border-bottom: none;
     }
 }
