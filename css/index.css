@@ -7,6 +7,7 @@ body {
 .column {
     width: 100%;
     min-height: 50%;
+    padding: 1vh;
 }
 
 .active_back {
@@ -25,9 +26,14 @@ a {
     color: #2B66C9;
 }
 
+ul {
+    padding: 0;
+}
+
 li {
     list-style-type: none;
     display: block;
+    margin: 2vh;
 }
 
 .text_left {
@@ -55,6 +61,7 @@ li {
 
     .column {
         min-height: 50vh;
+        width: 50%;
     }
 
     .column > .row {
