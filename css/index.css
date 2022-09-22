@@ -6,16 +6,13 @@ body {
 
 .column {
     width: 100%;
-    min-height: 50%;
-    padding: 1vh;
+    height: 49%;
 }
 
 .active_back {
     background-color: #2B66C9;
     opacity: 0.95;
     color: white;
-    background-size: cover;
-    border-bottom: solid 3px #2B66C9;
 }
 
 .active_back a {
@@ -28,7 +25,6 @@ a {
 
 h1 {
     font-size: 36px;
-    margin-top: 1vh;
 }
 
 ul {
@@ -53,10 +49,6 @@ li {
     padding: 0;
 }
 
-.wrapper {
-    border-top: solid 3px #2B66C9;
-}
-
 @media all and (min-width: 500px) and (min-height: 500px) {
     .wrapper {
         display: flex;
@@ -66,10 +58,6 @@ li {
     .column {
         min-height: 50vh;
         width: 50%;
-    }
-
-    .column > .row {
-       margin-top: 1vh;
     }
 
     .hide_wide { 
