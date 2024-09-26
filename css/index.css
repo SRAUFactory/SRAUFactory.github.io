@@ -48,19 +48,3 @@ li {
 .header_menu {
     padding: 0;
 }
-
-@media all and (min-width: 500px) and (min-height: 500px) {
-    .wrapper {
-        display: flex;
-        border-top: none;
-    }
-
-    .column {
-        min-height: 50vh;
-        width: 50%;
-    }
-
-    .hide_wide { 
-        display: none;
-    }
-}
