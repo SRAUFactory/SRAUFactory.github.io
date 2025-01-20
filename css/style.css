@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: #007BFF;
+  background-color: #2B66C9;
   color: white;
   text-align: center;
   padding: 16px;
@@ -43,7 +43,7 @@ header {
 }
 
 .chat-message.user {
-  background-color: #007BFF;
+  background-color: #2B66C9;
   color: white;
   text-align: right;
   margin-left: auto;
@@ -51,7 +51,7 @@ header {
 
 .chat-message.bot {
   background-color: #f1f1f1;
-  color: #007BFF;
+  color: #2B66C9;
   text-align: left;
   margin-right: auto;
   font-weight: bold;
@@ -60,7 +60,7 @@ header {
 .chat-input {
   display: flex;
   padding: 12px;
-  background-color: #007BFF;
+  background-color: #2B66C9;
   flex-shrink: 0;
 }
 
@@ -80,7 +80,7 @@ header {
 .chat-input button {
   padding: 10px 16px;
   background-color: white;
-  color: #007BFF;
+  color: #2B66C9;
   border: none;
   border-radius: 4px;
   font-size: 14px;
