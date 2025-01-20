@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   height: 100vh;
   background-color: #f9f9f9;
+  overflow: hidden; /* 全体のスクロールを無効化 */
 }
 
 header {
@@ -16,13 +17,19 @@ header {
   padding: 16px;
   font-size: 20px;
   font-weight: bold;
-  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .chat-container {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-top: 64px; /* ヘッダーの高さ分調整 */
+  margin-bottom: 64px; /* フォームの高さ分調整 */
 }
 
 .chat-window {
@@ -61,7 +68,11 @@ header {
   display: flex;
   padding: 12px;
   background-color: #2B66C9;
-  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .chat-input input {
