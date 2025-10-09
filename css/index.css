@@ -25,6 +25,7 @@ a {
 
 h1 {
     font-size: 36px;
+    padding-top: 20px;
 }
 
 ul {
@@ -34,7 +35,7 @@ ul {
 li {
     list-style-type: none;
     display: block;
-    margin: 2vh;
+    margin: 1vh;
 }
 
 .text_left {
@@ -47,4 +48,8 @@ li {
 
 .header_menu {
     padding: 0;
+}
+
+.header_menu > li {
+    display: inline-block;
 }
