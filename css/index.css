@@ -6,7 +6,7 @@ body {
 
 .column {
     width: 100%;
-    height: 49%;
+    padding: 1px 0;
 }
 
 .active_back {
@@ -25,7 +25,10 @@ a {
 
 h1 {
     font-size: 36px;
-    padding-top: 20px;
+}
+h2 {
+    margin: 0, auto;
+    padding: 0;
 }
 
 ul {
@@ -41,10 +44,6 @@ li {
 .text_left {
     display: inline-block;
     text-align: left;
-}
-
-.header_menu {
-    padding: 0;
 }
 
 .header_menu > li {
