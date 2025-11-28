@@ -39,11 +39,8 @@ li {
 }
 
 .text_left {
+    display: inline-block;
     text-align: left;
-}
-
-.text_right {
-    text-align: right;
 }
 
 .header_menu {
