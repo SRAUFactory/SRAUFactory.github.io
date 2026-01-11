@@ -185,16 +185,15 @@ body {
 .services-list a {
     display: block;
     padding: 1rem;
-    color: #2B66C9;
-    border: 2px solid #2B66C9;
+    background-color: #2B66C9;
+    color: white;
     border-radius: 5px;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
 }
 
 .services-list a:hover {
-    background-color: #2B66C9;
-    color: white;
+    background-color: #1e4aa0;
 }
 
 /* Stacks Section */
@@ -238,18 +237,17 @@ body {
 .works-list a {
     display: block;
     padding: 1.5rem;
-    color: #2B66C9;
-    border: 2px solid #2B66C9;
+    background-color: #2B66C9;
+    color: white;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
     font-weight: 500;
 }
 
 .works-list a:hover {
-    background-color: #2B66C9;
-    color: white;
+    background-color: #1e4aa0;
 }
 
 /* History Section */
@@ -303,16 +301,15 @@ body {
 .contacts-list a {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    color: #2B66C9;
-    border: 2px solid #2B66C9;
+    background-color: #2B66C9;
+    color: white;
     border-radius: 5px;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
 }
 
 .contacts-list a:hover {
-    background-color: #2B66C9;
-    color: white;
+    background-color: #1e4aa0;
 }
 
 /* Responsive Design */
