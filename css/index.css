@@ -104,7 +104,6 @@ body {
 .section {
     width: 100%;
     padding: 3rem 1rem;
-    scroll-margin-top: 70px;
 }
 
 .section-content {
