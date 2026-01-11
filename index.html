@@ -10,7 +10,7 @@
         <meta property="og:url" content="https://sraufactory.github.io/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="SRAU Factory" />
-        <meta property="og:description" content="リモートワーク中心で働くフリーランスのエンジニアです。少人数/短期間の開発を得意とし、モバイル/PCのWebサイト、モバイルアプリの開発を幅広く担当。最近は主にRuby on Rails/TypeScript/TypeScript/Vue/Flutter(Dart)を使用することが多いです。" />
+        <meta property="og:description" content="リモートワーク中心で働くフリーランスのエンジニアです。少人数/短期間の開発を得意とし、モバイル/PCのWebサイト、モバイルアプリの開発を幅広く担当。最近は主にRuby on Rails/TypeScript/Vue/Flutter(Dart)を使用することが多いです。" />
         <meta property="og:site_name" content="SRAU Factory Official Site" />
         <meta property="og:image" content="https://sraufactory.github.io/img/logo.png" />
         <title>SRAU Factory</title>
@@ -19,60 +19,140 @@
         <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     </head>
     <body>
-        <div id="top" class="active_back column">
-            <h1>SRAU Factory</h1>
-            <ul class="header_menu">
-                <li>Freelancer</li>
-                <li>Programmer</li>
-                <li>Remote worker</li>
-            </ul>
-        </div>
-        <div id="history" class="column">
-            <h2>History</h2>
-            <ul class="text_left history">
-                <li>2014年12月: 開業。企業常駐の案件を中心に活動</li>
-                <li>2016年1月: リモートワークを中心とした活動を開始</li>
-                <li>2017年7月: 株式会社クラウドワークス社よりプロクラウドワーカー認定（〜2019年 1月）</li>
-                <li>2018年1月: 当サイト開設</li>
-                <li>2022年3月: 当サイトリニューアル</li>
-            </ul>
-        </div>
-        <div id="works" class="active_back column">
-            <h2>Works</h2>
-            <ul class="header_menu">
-                <li>
-                    <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">CrowdWorks</a>
-                </li>
-                <li>
-                    <a href="https://crowdworks.jp/public/employees/741010/occupations" target="_blank">Stacks</a>
-                </li>
-                <li>
-                    <a href="https://crowdworks.jp/public/employees/741010/resumes" target="_blank">Projects</a>
-                </li>
-                <li>
-                    <a href="https://sraufactory.github.io/web-data-editor/" target="_blank">Web Data Editor</a>
-                </li>
-                <li>
-                    <a href="https://qiita.com/SRAUFactory" target="_blank">Knowledges</a>
-                </li>
-                <li>
-                    <a href="https://github.com/SRAUFactory?tab=repositories" target="_blank">Repositories</a>
-                </li>
-            </ul>
-        </div>
-        <div id="contacts" class="column">
-            <h2>Contacts</h2>
-            <ul class="header_menu">
-                <li>
-                    <a href="https://mstdn.jp/@sraufactory" target="_blank">Mastdon</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/SRAUFactory" target="_blank">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://crowdworks.jp/public/employees/741010" target="_blank">CrowdWorks</a>
-                </li>
-            </ul>
-        </div>
+        <!-- Fixed Header -->
+        <header class="fixed-header">
+            <div class="header-container">
+                <h1 class="logo">SRAU Factory</h1>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="mobile-menu" id="mobileMenu">
+                <a href="#hero">Home</a>
+                <a href="#services">Services</a>
+                <a href="#stacks">Stacks</a>
+                <a href="#works">Works</a>
+                <a href="#history">History</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="section-content">
+                <div class="role-labels">
+                    <span>Freelancer</span>
+                    <span>Programmer</span>
+                    <span>Remote worker</span>
+                </div>
+                <h2>SRAU Factory</h2>
+                <p class="summary">リモートワーク中心で働くフリーランスのエンジニアです。少人数/短期間の開発を得意とし、モバイル/PCのWebサイト、モバイルアプリの開発を幅広く担当。最近は主にRuby on Rails/TypeScript/Vue/Flutter(Dart)を使用することが多いです。</p>
+                <a href="#contacts" class="contact-button">Contact</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <div class="section-content">
+                <h2>What I Do</h2>
+                <ul class="services-list">
+                    <li>
+                        <a href="https://sraufactory.github.io/web-data-editor/" target="_blank">Web Data Editor</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Stacks Section -->
+        <section id="stacks" class="section stacks-section">
+            <div class="section-content">
+                <h2>Stacks</h2>
+                <div class="stacks-grid">
+                    <div class="stack-item">Ruby on Rails</div>
+                    <div class="stack-item">TypeScript</div>
+                    <div class="stack-item">Vue</div>
+                    <div class="stack-item">Flutter</div>
+                    <div class="stack-item">React</div>
+                    <div class="stack-item">JavaScript</div>
+                    <div class="stack-item">HTML/CSS</div>
+                    <div class="stack-item">PostgreSQL</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="section works-section">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <ul class="works-list">
+                    <li>
+                        <a href="https://crowdworks.jp/public/employees/741010/contracts" target="_blank">CrowdWorks</a>
+                    </li>
+                    <li>
+                        <a href="https://crowdworks.jp/public/employees/741010/occupations" target="_blank">Stacks</a>
+                    </li>
+                    <li>
+                        <a href="https://crowdworks.jp/public/employees/741010/resumes" target="_blank">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://qiita.com/SRAUFactory" target="_blank">Knowledges</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SRAUFactory?tab=repositories" target="_blank">Repositories</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="history" class="section history-section">
+            <div class="section-content">
+                <h2>History</h2>
+                <ul class="history-list">
+                    <li>
+                        <span class="year">2014年12月</span>
+                        <span class="description">開業。企業常駐の案件を中心に活動</span>
+                    </li>
+                    <li>
+                        <span class="year">2016年1月</span>
+                        <span class="description">リモートワークを中心とした活動を開始</span>
+                    </li>
+                    <li>
+                        <span class="year">2017年7月</span>
+                        <span class="description">株式会社クラウドワークス社よりプロクラウドワーカー認定（〜2019年 1月）</span>
+                    </li>
+                    <li>
+                        <span class="year">2018年1月</span>
+                        <span class="description">当サイト開設</span>
+                    </li>
+                    <li>
+                        <span class="year">2022年3月</span>
+                        <span class="description">当サイトリニューアル</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="section contacts-section">
+            <div class="section-content">
+                <h2>Contacts</h2>
+                <ul class="contacts-list">
+                    <li>
+                        <a href="https://mstdn.jp/@sraufactory" target="_blank">Mastodon</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/SRAUFactory" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://crowdworks.jp/public/employees/741010" target="_blank">CrowdWorks</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <script src="js/main.js"></script>
     </body>
 </html>
