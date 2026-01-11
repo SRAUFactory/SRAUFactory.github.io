@@ -216,6 +216,25 @@ body {
     text-align: center;
 }
 
+.stacks-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.stacks-more a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #2B66C9;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.stacks-more a:hover {
+    background-color: #1e4aa0;
+}
+
 /* Works Section */
 .works-section {
     background-color: white;
