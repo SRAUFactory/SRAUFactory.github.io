@@ -1,0 +1,35 @@
+# SRAU Factory
+
+> フリーランスのプログラマー/ITエンジニア。リモートワーク中心で少人数・短期間の開発を得意とする。
+
+SRAU Factory は2014年創業のフリーランスエンジニアです。WebサイトやモバイルアプリのフルスタックWeb開発を専門としており、Ruby on Rails・Vue.js・Flutter を主力スタックとして使用しています。クラウドソーシングプラットフォーム CrowdWorks にてプロクラウドワーカー認定を受けた実績があります（2017〜2019年）。
+
+## リンク
+
+- [ホームページ](https://sraufactory.github.io/): サービス概要・スタック・経歴
+- [CrowdWorks プロフィール](https://crowdworks.jp/public/employees/741010): 受注実績・スキル詳細
+- [GitHub リポジトリ](https://github.com/SRAUFactory?tab=repositories): 公開コード
+- [Qiita（技術ブログ）](https://qiita.com/SRAUFactory): 技術記事・ナレッジ
+- [Web Data Editor](https://sraufactory.github.io/web-data-editor/): 開発・公開ツール
+
+## 主要スキル
+
+- **バックエンド**: Ruby on Rails（3〜5年）、PHP（5年以上）、Node.js（1〜3年）、Python、Go
+- **フロントエンド**: TypeScript（1〜3年）、Vue.js / Nuxt.js（3〜5年）、JavaScript / jQuery（5年以上）
+- **モバイル**: Flutter / Dart（1〜3年）、iOS（Swift / Objective-C）、Android（Java）
+- **インフラ**: AWS（EC2、S3、Lambda、API Gateway、DynamoDB、CloudFormation）
+- **テスト**: PHPUnit（5年以上）、Jest、CI/CD によるテスト自動化
+
+## 経歴
+
+- 2014年12月: 開業。企業常駐の案件を中心に活動
+- 2016年1月: リモートワーク中心の活動を開始
+- 2017年7月: CrowdWorks よりプロクラウドワーカー認定（〜2019年1月）
+- 2018年1月: 当サイト開設
+- 2026年1月: 当サイトリニューアル
+
+## 連絡先
+
+- [X（旧Twitter）](https://x.com/SRAUFactory)
+- [Mastodon](https://mstdn.jp/@sraufactory)
+- [CrowdWorks](https://crowdworks.jp/public/employees/741010)
