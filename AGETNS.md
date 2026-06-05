@@ -1,4 +1,4 @@
-# SRAUFactory.github.io AI Agent Instructions (AGETNS.md)
+# AGETNS.md
 
 このファイルは、本プロジェクトを操作するAIエージェント向けの指示書です。本プロジェクトの開発、修正、または調査を行う際は、以下の概要および制約事項に従ってください。
 
