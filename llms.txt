@@ -14,11 +14,12 @@ SRAU Factory は2014年創業のフリーランスエンジニアです。Webサ
 
 ## 主要スキル
 
-- **バックエンド**: Ruby on Rails（3〜5年）、PHP（5年以上）、Node.js（1〜3年）、Python、Go
-- **フロントエンド**: TypeScript（1〜3年）、Vue.js / Nuxt.js（3〜5年）、JavaScript / jQuery（5年以上）
-- **モバイル**: Flutter / Dart（1〜3年）、iOS（Swift / Objective-C）、Android（Java）
-- **インフラ**: AWS（EC2、S3、Lambda、API Gateway、DynamoDB、CloudFormation）
-- **テスト**: PHPUnit（5年以上）、Jest、CI/CD によるテスト自動化
+- **バックエンド**: Ruby on Rails（5年以上）、PHP（5年以上）、Ruby（5年以上）、Node.js（1〜3年）、Perl（1〜3年）、Python（半年〜1年）、Go（半年〜1年）
+- **フロントエンド**: TypeScript（3〜5年）、Vue.js / Nuxt.js（5年以上）、JavaScript / jQuery（5年以上）、AngularJS（半年〜1年）
+- **モバイル**: Flutter / Dart（3〜5年）、iOS（Swift（半年〜1年） / Objective-C（1〜3年））、Android（Java（3〜5年） / Androidアプリ（1〜3年））
+- **インフラ**: AWS（5年以上：EC2、S3、Lambda、API Gateway、DynamoDB、CloudFormation）、Google App Engine（半年未満）
+- **テスト**: PHPUnit（5年以上）、RSpec（5年以上）、Jest、CI/CD によるテスト自動化
+- **AI・ツール**: Claude（半年〜1年）
 
 ## 経歴
 
