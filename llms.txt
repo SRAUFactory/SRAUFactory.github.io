@@ -12,6 +12,21 @@ SRAU Factory は2014年創業のフリーランスエンジニア・プロジェ
 - [Qiita（技術ブログ）](https://qiita.com/SRAUFactory): 技術記事・ナレッジ
 - [Web Data Editor](https://sraufactory.github.io/web-data-editor/): 開発・公開ツール
 
+## 最近の主要技術トップ10
+
+各リポジトリや活動実績から集計した、最近頻繁に使用されている技術トップ10は以下の通りです。
+
+1. JavaScript
+2. TypeScript
+3. Svelte
+4. Go
+5. Swift
+6. Dart / Flutter
+7. Ruby on Rails
+8. Vue.js
+9. Python
+10. GraphQL
+
 ## 主要スキル
 
 - **バックエンド**: Ruby on Rails（5年以上）、PHP（5年以上）、Ruby（5年以上）、Node.js（1〜3年）、Perl（1〜3年）、Python（半年〜1年）、Go（半年〜1年）
